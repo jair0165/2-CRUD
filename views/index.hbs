@@ -37,7 +37,7 @@
                 <h2>Novedades</h2>
                 <ul class="Lista-novedades">
                     {{#each novedades}}
-                    <li><a href="#" data-toggle="modal" data-target="#Nove01Modal{{id}}"><img src="images/novedades01.jpg">{{titulo}}</a></li>
+                    <li><a href="javascript:void(0)" data-toggle="modal" data-target="#Nove01Modal{{id}}"><img src="{{imagen}}" width="120">{{titulo}}</a></li>
                     {{/each}}                   
                 </ul>
             </div>
@@ -55,6 +55,7 @@
                         </div>
                         <div class="modal-body">
                             <h2>{{subtitulo}}</h2>
+                            <img src="{{imagen}}">
                             <p>{{cuerpo}}</p>
                         </div>
                         <div class="modal-footer">
