@@ -50,7 +50,7 @@ router.post('/agregar', async (req, res, next) => {
   }
 });
 
-router.get('modificar/:id', async (req, res, next) => {
+router.get('/modificar/:id', async (req, res, next) => {
   var id = req.params.id;
   var novedad = await novedadesModel.getNovedadesById(id);
   res.render('admin/modificar', {
