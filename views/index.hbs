@@ -1,72 +1,174 @@
- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Cervs</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Dachshund</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a data-scroll class="nav-link" href="#Home">Home </a>
                 </li>
-                <li class="nav-item">
-                    <a data-scroll class="nav-link" href="#Novedades">Novedades</a>
+                 <li class="nav-item active">
+                    <a data-scroll class="nav-link" href="#Curiosidades">Curiosidades</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a data-scroll class="nav-link" href="#Historia">Historia</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a data-scroll class="nav-link" href="#Nosotros">Nosotros</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
+                    <a data-scroll class="nav-link" href="#Novedades">Novedades </a>
+                </li>
+                <li class="nav-item active">
                     <a data-scroll class="nav-link" href="#Conocenos">Conocenos</a>
                 </li>
-            </ul>
+                 <li class="nav-item active">
+                    <a data-scroll class="nav-link" href="admin/login">Login</a>
+                </li>
+                            </ul>
         </div>
     </nav>
     <div class="container-fluid">
 
         <div id="Home" class="row align-items-center hero">
-            <div class="col-lg-3 offset-lg-2">
-                <p>Bajada</p>
-                <h1>Titulo principal</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed labore perspiciatis aut velit dolor
-                    alias magnam eveniet, voluptatibus, amet voluptas dolores quod? Veniam vero blanditiis quaerat
-                    consectetur facilis, alias labore!</p>
+            <div class="col-lg-4 offset-lg-1">
+                <p>Raza</p>
+                <h1>DACHSHUND</h1>
+                <p>Se trata de un perro de lomo largo, patas cortas y altura diminuta. Aunque pequeño, el perro
+                    salchicha no deja de ser musculoso y de constitución fuerte, con un pecho ancho y patas delanteras
+                    bien desarrolladas. Tiene el pelo corto, denso y liso, y puede presentar diversos colores. El
+                    dachshund mini adulto pesa 4,5 - 5 kg y tiene una altura de aproximadamente 12 - 15 cm.</p>
             </div>
         </div>
 
-        <div id="Novedades" class="row py-4">
+
+        <div id="Curiosidades" class="row py-4">
             <div class="col-md-5 offset-md-2 py-3">
-                <h2>Novedades</h2>
-                <ul class="Lista-novedades">
-                    {{#each novedades}}
-                    <li><a href="javascript:void(0)" data-toggle="modal" data-target="#Nove01Modal{{id}}"><img src="{{imagen}}" width="120">{{titulo}}</a></li>
-                    {{/each}}                   
+                <h2>Curiosidades</h2>
+                <ul class="Lista-curiosidades">
+                    <li><a href="#" data-toggle="modal" data-target="#Nove01Modal"><img src="images/Curiosidad.jpg"
+                                alt="">Curiosidad #1</a></li>
+                    <br>
+                    <li><a href="#" data-toggle="modal" data-target="#Nove02Modal"><img src="images/Curiosidad.jpg"
+                                alt="">Curiosidad #2</a></li>
+                    <br>
+                    <li><a href="#" data-toggle="modal" data-target="#Nove03Modal"><img src="images/Curiosidad.jpg"
+                                alt="">Curiosidad #3</a></li>
+                    <br>
+                    <li><a href="#" data-toggle="modal" data-target="#Nove04Modal"><img src="images/Curiosidad.jpg"
+                                alt="">Curiosidad #4</a></li>
+                    <br>
+                    <li><a href="#" data-toggle="modal" data-target="#Nove05Modal"><img src="images/Curiosidad.jpg"
+                                alt="">Curiosidad #5</a></li>
                 </ul>
             </div>
-                {{#each novedades}}
             <!-- Modal -->
-            <div class="modal fade" id="Nove01Modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="Nove01Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">{{titulo}}</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Curiosidad #1</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <h2>{{subtitulo}}</h2>
-                            <img src="{{imagen}}">
-                            <p>{{cuerpo}}</p>
+                            <h3>Sólo hay un dueño de su corazón</h3>
+                            <p>Pues sí, los perros salchicha son muy amorosos y disfrutan mucho de toda la familia,
+                                pero habrá sólo un dueño de su corazón</p>
                         </div>
                         <div class="modal-footer">
                         </div>
                     </div>
                 </div>
             </div>
-                {{/each}}   
-            <div class="col-md-3">
-                <div class="rounded py-3 testimonios">
-                    <h2 class="text-center">Testimonios</h2>
+            <div class="modal fade" id="Nove02Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Curiosidad #2</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h3>Son muy tiernos y chistosos</h3>
+                            <p>Con todo y su fuerte personalidad, los salchicha son perros sumamente tiernos,
+                                disfrutarán enormemente de tu compañía todo el tiempo y constantemente te harán sonreír.
+                                Sí, son el tipo de perro que se acurrucará a tu lado, recargará la cabeza en tu pierna y
+                                suspirará por estar junto a ti.</p>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Nove03Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Curiosidad #3</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h3>¡Ay, el frío!</h3>
+                            <p>Los perros salchicha suelen ser MUY friolentos y normalmente adorarán dormir entre
+                                cobijas y que les pongas un suéter si la temperatura baja. Eso sí, encontrar un suéter
+                                que les quede bien será todo un reto gracias a la forma de su cuerpo.</p>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Nove04Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Curiosidad #4</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h3>Son hábiles ladronzuelos.</h3>
+                            <p>Casi sin que te des cuenta tomarán aquello que les gusta y no es suyo, como algún pañuelo
+                                desechable, algo de comer, el juguete del niño de la casa, un calcetín o cualquier otra
+                                cosa que les resulte interesante.</p>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Nove05Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Curiosidad #5</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h3>Sufrirás cada vez que brinquen.</h3>
+                            <p>Los perros salchicha tienden a brincar MUCHO cuando se emocionan, pero esto puede
+                                hacerles tremendo daño a sus articulaciones y a su columna por la estructura de su
+                                cuerpo, así que cada vez que lo haga correrás a tratar de detenerlo..</p>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="rounded py-1 testimonios">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -76,101 +178,121 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="testimonio">
-                                    <h5>"La Mejor birra del Mundo!!</h5>
-                                    <p>Francisco,Monte Grande</p>
+                                    <img src="images/C1.jpg" class="d-block w-100" alt="...">
+                                    <h5>Algo de humor</h5>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="testimonio">
-                                    <h5>"La Mejor birra del Mundo!!</h5>
-                                    <p>Francisco2,Monte Grande</p>
+                                    <img src="images/C2.jpg" class="d-block w-100" alt="...">
+                                    <h5>Muy elegante</h5>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="testimonio">
-                                    <h5>"La Mejor birra del Mundo!!</h5>
-                                    <p>Francisco3,Monte Grande</p>
+                                    <img src="images/C3.jpg" class="d-block w-100" alt="...">
+                                    <h5>Los tres mosqueteros</h5>
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
-
                 </div>
             </div>
-
-
-
-
-
         </div>
-
-        <div id="Historia" class="row align-items-center py-4">
+        <div id="Historia" class="row align-items-center py-8">
             <div class="col-lg-2 col-md-3 offset-lg-2 d-node d-sm-block">
-                <img src="images/historia_1.jpg" alt="historia 1" class="img-fluid">
+                <img src="images/historia_1.jpg" alt="historia 1" class="img-fluid" height="1000" width="500">
             </div>
             <div class="col-lg-2 col-md-3 d-none d-sm-block">
-                <img src="images/historia_2.jpg" alt="historia 2" class="img-fluid">
+                <img src="images/historia_3.jpg" alt="historia 2" class="img-fluid" height="2000" width="800">
             </div>
             <div class="col-lg-12 d-sm-none">
                 <img src="images/historia_3.jpg" alt="historia 3" class="img-fluid">
             </div>
             <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
                 <h2>Historia</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, non itaque! Sapiente aliquid
-                    recusandae molestiae amet explicabo vitae voluptatem veniam accusantium, repellendus eos
-                    necessitatibus magni. Nisi iste vero ex eos.</p>
+                <p><i>“Suerte tiene el amo al encontrar en su senda a un buen perro,
+                        pero mayor es la suerte del perro al encontrar en su camino a un buen amo” </i><br>
+                    L. G. Leguz <br>
+
+                    Bienvenido a Criadero
+                    <br>
+
+                    Hace más de 70 años un escritor peruano llamado Leopoldo Leguz dio inicio a este proyecto de crianza
+                    que más tarde se convertiría en un proyecto familiar. Su amor y gran admiración por las cualidades
+                    de los perros, así como su característica soledad, lo llevaron a compartir con ellos años y años de
+                    vida. Sobra decir que esta pasión y amor por la vida y el conocimiento la transmitió a sus hijos.
+                    <br>
+
+                    Desde pequeño su sentido de investigación, curiosidad y amor por la naturaleza lo han caracterizado.
+                    Es un gran apasionado de
+                    los perros, de las razas y de la ciencia.Cada uno de los cachorros que criamos es importante y parte
+                    de una gran familia. Son criados con amor, atenciones, una nutrición balanceada, instalaciones en
+                    donde tienen espacio para correr, jugar y tomar el sol. <br>
+
+                    El conocimiento es otro de los pilares de nuestro proyecto. Un buen manejo genético es esencial para
+                    prevenir enfermedades. Y aquí, no sólo se requiere de pasión sino de una extensa experiencia. Así
+                    como de ética y respeto hacia los padres y los cachorros que forman la Familia. No somos
+                    reproductores masivos ni un criadero de traspatio.. somos criadores responsables con décadas de
+                    experiencia. <br>
+
+                    Amamos a los perros, amamos lo que hacemos, y no hay mayor recompensa que ver a las familias que
+                    adquieren uno de nuestros cachorros estar felices por poder escribir grandes historias con ellos. Y
+                    por supuesto, ver que nuestras crías son felices y llevan una vida saludable y llena de alegría.
+                </p>
             </div>
+
+
+
         </div>
 
         <div id="Nosotros" class="row align-items-stretch my-3 staff py-4">
             <div class="col-lg-8 offset-lg-2">
-
+                <h2 style="color:antiquewhite">Nosotros</h2>
                 <div class="card-deck">
                     <div class="card">
                         <img src="images/nosotros01.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">Adiestramiento canino</h5>
+                            <p class="card-text">Nos enfocamos en mejorar la comunicación y el vínculo de las familias
+                                con sus perros, quienes son parte de ellas, enriqueciendo así su calidad de vida.
+                                Para esto, utilizamos técnicas y herramientas alineadas a la tenencia responsable,
+                                rechazando el maltrato animal, técnicas con aval científico sustentadas por nuestra
+                                experiencia, conocimientos y profesionalismo.</p>
                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                         </div>
                     </div>
                     <div class="card">
                         <img src="images/nosotros02.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
+                            <h5 class="card-title">Venta de cachorros</h5>
+                            <p class="card-text">Amamos a los perros, amamos lo que hacemos, y no hay mayor recompensa
+                                que ver a las familias que adquieren uno de nuestros cachorros estar felices por poder
+                                escribir grandes historias con ellos. Y por supuesto, ver que nuestras crías son felices
+                                y llevan una vida saludable y llena de alegría.</p>
                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                         </div>
                     </div>
                     <div class="card">
                         <img src="images/nosotros03.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.</p>
+                            <h5 class="card-title">Estética Canina</h5>
+                            <p class="card-text">Con un enfoque clásico pero a la vez contemporáneo. Hacemos gala de la
+                                tradición al recurrir a técnicas europeas y norteamericanas que por décadas han marcado
+                                el óptimo ejercicio de la estética. Contemporáneo porque combinamos
+                                técnicas nuevas que resaltan las bellas cualidades de tu mascota y que ponen de
+                                manifiesto tu propia creatividad.</p>
                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                         </div>
                     </div>
                     <div class="card">
                         <img src="images/nosotros04.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.</p>
+                            <h5 class="card-title">Hospedaje</h5>
+                            <p class="card-text">Ofrecemos a sus mascotas, una estadía agradable, rodeado de naturaleza,
+                                entretenimientos y cuidados.Dado que todos los caniles cuentan con visión panorámica.
+                                Las mascotas son alojados según su tamaño, separando los grandes de los medianos y los
+                                pequeños.Si tiene que viajar nosotros cuidaremos de su mascota.</p>
                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                         </div>
                     </div>
@@ -178,58 +300,95 @@
             </div>
         </div>
 
+
+
+
+<h2 class="col-md-5 offset-md-2 py-3">Novedades</h2> 
+ {{#each novedades}}
+ <div class="card mb-3" style="max-width: " id="{{id}} ">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{{imagen}}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{titulo}}</h5>
+        <p class="card-text">{{subtitulo}}</p>
+        <p class="card-text"><small class="text-muted">{{cuerpo}}</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}} 
+
+
+
+
         <div id="Conocenos" class="row py-4">
             <div class="col-md-4 offset-md-2">
                 <h2>Visitanos</h2>
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2274313773255!2d-58.422204285052395!3d-34.59841006472374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb666703c59f%3A0x6f9fd2b57bacdcac!2s%C3%81rea%20de%20Desarrollo%20Profesional%20-%20Pasant%C3%ADas!5e0!3m2!1ses-419!2sar!4v1622423008306!5m2!1ses-419!2sar"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.3114519602436!2d-73.03463250476493!3d6.901496586392127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e684904d0010079%3A0x5451aa99e58f7e16!2sParcela%20la%20Fortuna%20Mesa%20de%20los%20santos!5e0!3m2!1ses-419!2sar!4v1622504064149!5m2!1ses-419!2sar"
                         style="border:0;" allowfullscreen=""></iframe>
                 </div>
             </div>
-        
 
-        <div class="col-md-4 mt-4 mt-sm-0">
-            <h2>Contactanos</h2>
-            <form action="/" method="POST">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="..." name="nombre">
+
+            <div class="col-md-4 mt-4 mt-sm-0">
+                <h2>Contactanos</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="...">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" placeholder="...">
+                        </div>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" class="form-control" id="apellido" placeholder="..." name="apellido">
-                    </div>
-               </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com" name="email">
+                        <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com">
                     </div>
                     <div class="form-group">
                         <label for="telefono">Telefono</label>
-                        <input type="text" class="form-control" id="telefono" placeholder="..." name="telefono">
+                        <input type="text" class="form-control" id="telefono" placeholder="...">
                     </div>
                     <div class="form-group">
                         <label for="mensaje">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="4" name="comentarios"></textarea>
-                   </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-            {{message}}
+                        <textarea class="form-control" id="mensaje" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
 
+        <footer>
+            <p class="text-center">Diseñado por: JAIR HERNANDEZ</p>
+        </footer>
 
 
 
-    </div>
-
-
-
-
-   
-
-    <footer>
-        <p class="text-center">Diseñado por: JAIR HERNANDEZ</p>
-    </footer>
 
